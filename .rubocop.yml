@@ -1,0 +1,48 @@
+AlignParameters:
+  Enabled: false
+
+AndOr:
+  Enabled: false
+
+ClassLength:
+  Max: 150
+
+CyclomaticComplexity:
+  Max: 20
+
+Documentation:
+  Enabled: false
+
+FormatString:
+  EnforcedStyle: percent
+
+LineLength:
+  Max: 120
+  Exclude:
+    - lib/ecdsa/group/*.rb
+    - spec/nist_example_spec.rb
+
+MethodLength:
+  Max: 20
+
+# The unless keyword doesn't exists in most other languages and it makes lines
+# longer.  Let's not force ourselves to use it.
+NegatedIf:
+  Enabled: false
+
+# Buggy cop: it was auto-correcting files that were excluded when I ran rubcop -a
+NumericLiterals:
+  Enabled: false
+  Exclude:
+    - lib/ecdsa/group/nist*.rb
+
+SignalException:
+  EnforcedStyle: only_raise
+
+# Very picky about what I name block params to 'reduce'.
+SingleLineBlockParams:
+  Enabled: false
+
+TrailingComma:
+  EnforcedStyleForMultiline: comma
+  Enabled: false
