@@ -1,5 +1,0 @@
-lib/ecdsa/**/*.rb
---readme README.md
---markup markdown
--
-ChangeLog.md
